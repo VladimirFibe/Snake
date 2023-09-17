@@ -12,6 +12,13 @@
 		022B43892AB7024D00D6977B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43882AB7024D00D6977B /* ViewController.swift */; };
 		022B438E2AB7024E00D6977B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022B438D2AB7024E00D6977B /* Assets.xcassets */; };
 		022B43912AB7024E00D6977B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022B438F2AB7024E00D6977B /* LaunchScreen.storyboard */; };
+		022B439F2AB7049E00D6977B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B439E2AB7049E00D6977B /* BaseView.swift */; };
+		022B43A22AB7051400D6977B /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43A12AB7051400D6977B /* BoardView.swift */; };
+		022B43A62AB7057D00D6977B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43A52AB7057D00D6977B /* BaseViewController.swift */; };
+		022B43A82AB709A600D6977B /* SnakeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43A72AB709A600D6977B /* SnakeBoard.swift */; };
+		022B43AC2AB710EA00D6977B /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43A92AB710EA00D6977B /* AppFont.swift */; };
+		022B43AD2AB710EA00D6977B /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43AA2AB710EA00D6977B /* AppImage.swift */; };
+		022B43AE2AB710EA00D6977B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43AB2AB710EA00D6977B /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,14 @@
 		022B438D2AB7024E00D6977B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022B43902AB7024E00D6977B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		022B43922AB7024E00D6977B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022B43982AB7035900D6977B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		022B439E2AB7049E00D6977B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		022B43A12AB7051400D6977B /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		022B43A52AB7057D00D6977B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		022B43A72AB709A600D6977B /* SnakeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeBoard.swift; sourceTree = "<group>"; };
+		022B43A92AB710EA00D6977B /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		022B43AA2AB710EA00D6977B /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		022B43AB2AB710EA00D6977B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,7 @@
 		022B43782AB7024D00D6977B = {
 			isa = PBXGroup;
 			children = (
+				022B43982AB7035900D6977B /* README.md */,
 				022B43832AB7024D00D6977B /* Snake */,
 				022B43822AB7024D00D6977B /* Products */,
 			);
@@ -54,14 +70,69 @@
 		022B43832AB7024D00D6977B /* Snake */ = {
 			isa = PBXGroup;
 			children = (
+				022B43A02AB704FF00D6977B /* Views */,
+				022B439D2AB7048A00D6977B /* Core */,
+				022B439B2AB7043800D6977B /* Models */,
+				022B439A2AB7042100D6977B /* Supporting Files */,
+				022B43992AB7041200D6977B /* App */,
+				022B439C2AB7044D00D6977B /* Features */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		022B43992AB7041200D6977B /* App */ = {
+			isa = PBXGroup;
+			children = (
 				022B43842AB7024D00D6977B /* AppDelegate.swift */,
 				022B43862AB7024D00D6977B /* SceneDelegate.swift */,
-				022B43882AB7024D00D6977B /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		022B439A2AB7042100D6977B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				022B438D2AB7024E00D6977B /* Assets.xcassets */,
 				022B438F2AB7024E00D6977B /* LaunchScreen.storyboard */,
 				022B43922AB7024E00D6977B /* Info.plist */,
 			);
-			path = Snake;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		022B439B2AB7043800D6977B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				022B43A72AB709A600D6977B /* SnakeBoard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		022B439C2AB7044D00D6977B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				022B43882AB7024D00D6977B /* ViewController.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		022B439D2AB7048A00D6977B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				022B43AB2AB710EA00D6977B /* AppColor.swift */,
+				022B43A92AB710EA00D6977B /* AppFont.swift */,
+				022B43AA2AB710EA00D6977B /* AppImage.swift */,
+				022B439E2AB7049E00D6977B /* BaseView.swift */,
+				022B43A52AB7057D00D6977B /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		022B43A02AB704FF00D6977B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				022B43A12AB7051400D6977B /* BoardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022B43AC2AB710EA00D6977B /* AppFont.swift in Sources */,
+				022B43AE2AB710EA00D6977B /* AppColor.swift in Sources */,
 				022B43892AB7024D00D6977B /* ViewController.swift in Sources */,
 				022B43852AB7024D00D6977B /* AppDelegate.swift in Sources */,
+				022B43A22AB7051400D6977B /* BoardView.swift in Sources */,
 				022B43872AB7024D00D6977B /* SceneDelegate.swift in Sources */,
+				022B439F2AB7049E00D6977B /* BaseView.swift in Sources */,
+				022B43A62AB7057D00D6977B /* BaseViewController.swift in Sources */,
+				022B43A82AB709A600D6977B /* SnakeBoard.swift in Sources */,
+				022B43AD2AB710EA00D6977B /* AppImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

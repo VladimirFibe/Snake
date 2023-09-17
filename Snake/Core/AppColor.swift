@@ -19,4 +19,5 @@ enum AppColor: String, AppColorProtocol {
     case snakeHead = "snakeHeadColor"
     case snakeBody = "snakeBodyColor"
     case grid = "gridColor"
+    case addPoint = "addPointColor"
 }

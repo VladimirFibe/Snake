@@ -19,6 +19,7 @@
 		022B43AC2AB710EA00D6977B /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43A92AB710EA00D6977B /* AppFont.swift */; };
 		022B43AD2AB710EA00D6977B /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43AA2AB710EA00D6977B /* AppImage.swift */; };
 		022B43AE2AB710EA00D6977B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43AB2AB710EA00D6977B /* AppColor.swift */; };
+		022B43B02AB7164500D6977B /* SnakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B43AF2AB7164500D6977B /* SnakeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		022B43A92AB710EA00D6977B /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		022B43AA2AB710EA00D6977B /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
 		022B43AB2AB710EA00D6977B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		022B43AF2AB7164500D6977B /* SnakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				022B43A72AB709A600D6977B /* SnakeBoard.swift */,
+				022B43AF2AB7164500D6977B /* SnakeCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				022B43AC2AB710EA00D6977B /* AppFont.swift in Sources */,
 				022B43AE2AB710EA00D6977B /* AppColor.swift in Sources */,
 				022B43892AB7024D00D6977B /* ViewController.swift in Sources */,
+				022B43B02AB7164500D6977B /* SnakeCell.swift in Sources */,
 				022B43852AB7024D00D6977B /* AppDelegate.swift in Sources */,
 				022B43A22AB7051400D6977B /* BoardView.swift in Sources */,
 				022B43872AB7024D00D6977B /* SceneDelegate.swift in Sources */,
